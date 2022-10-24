@@ -6,7 +6,7 @@ $work-image-width: 270px;
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  background-size: 100% 1200px;
+  background-size: cover;
 }
 .work__title {
   padding-top: 120px;
@@ -32,6 +32,10 @@ $work-image-width: 270px;
     line-height: 29px;
   }
 }
+.work__inner{
+  display: flex;
+  justify-content: center;
+}
 .work__images {
   margin-left: 30px;
   margin-top: 70px;
@@ -45,12 +49,6 @@ $work-image-width: 270px;
     display: none;
   }
   @media (max-width: 1200px) {
-    margin: 0;
-  }
-}
-.client__gif {
-  margin-left: 160px;
-  @media (max-width: 1000px) {
     margin: 0;
   }
 }

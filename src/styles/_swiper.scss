@@ -1,5 +1,5 @@
 .wrapper {
-  padding-bottom: 180px;
+  // padding-bottom: 180px;
   position: relative;
   display: flex;
   align-items: center;
@@ -37,7 +37,7 @@
 }
 
 .next-button {
-    cursor: pointer;
+  cursor: pointer;
   -webkit-user-select: none;
   margin-bottom: 12px;
   border-radius: 50%;
@@ -45,7 +45,7 @@
   padding: 27px;
 }
 .prev-button {
-    cursor: pointer;
+   cursor: pointer;
   -webkit-user-select: none;
   border-radius: 50%;
   background: #f0f4f4;
@@ -83,7 +83,6 @@
 
 @media(max-width:576px){
   .wrapper{
-    // height: 700px;
     padding-bottom: 100px;
   }
     .review__text{
@@ -102,29 +101,15 @@
         padding: 0 30px;
     }
 }
-// .next-button:disabled,
-// .next-button[disabled]{
-//   border: 1px solid #999999;
-//   background-color: red;
-//   color: #666666;
-// }
-
+.swiper-button-disabled {
+  pointer-events: none;
+}
 .swiper-button-disabled .next-button--inner {
+
  stroke: #B3B3B3;
 }
 
 .swiper-button-disabled  .prev-button--inner {
+
   stroke: #B3B3B3;
  }
-// .next-button:hover {
-//   background: #E8F7F9;
-// }
-// .next-button:hover .next-button--inner{
-//   stroke: #15AEBF;
-// }
-// .prev-button:hover {
-//   background: #E8F7F9;
-// }
-// .prev-button:hover .prev-button--inner{
-//   stroke: #15AEBF;
-// }

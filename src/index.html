@@ -1,200 +1,134 @@
 <!DOCTYPE html>
 <html lang="ru, eng">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-    <title>Stays</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/images/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-  </head>
 
-  <body>
-    <!-- header inner -->
-    <div class="header__back">
-      <div class="nav__back" id="nav__back">
-        <div class="container">
-          <nav class="nav">
-            <ul class="nav__list">
-              <div class="nav__left">
-                <li>
-                  <a class="nav__link" href="#"
-                    ><img
-                      class="header__logo"
-                      src="./assets/images/icon/stays-logo.svg"
-                      alt="stays-logo"
-                  /></a>
-                </li>
-              </div>
-              <div class="nav__center">
-                <li class="nav__item">
-                  <a class="nav__link" id="nav__about">О нас</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" id="nav__work">Как это работает</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" id="nav__review">Отзывы</a>
-                </li>
-              </div>
-              <div class="nav__right">
-                <button class="nav__btn" id="nav__btn">
-                  <span class="btn__content1">Скачать приложение</span>
-                  <span class="btn__content2">Скачать</span>
-                </button>
-              </div>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <!-- header -->
-      <header class="header">
-        <div class="container">
-          <div class="header-info">
-            <p class="header__text">где угодно // когда угодно</p>
-            <h1 class="header__title">
-              Дачи, отели, квартиры, офисы и туры вашей мечты у вас под рукой
-            </h1>
-            <p class="header__text">
-              Снять или арендовать дачи, отели, квартиры, офисы и туры можно
-              через мобильное приложение Stays
-            </p>
-            <div class="header__apps">
-              <a
-                href="https://apps.apple.com/us/app/stays/id1632427614"
-                target="_blank"
-                class="header__apps__links"
-                ><img class="apps__image" src="./assets/images/icon/appstore.svg" alt="appstore"
-              /></a>
-              <a
-                href="https://play.google.com/store/apps/details?id=app.stays"
-                target="_blank"
-                class="header__apps__links"
-                ><img class="apps__image"
-                  src="./assets/images/icon/google-play.svg"
-                  alt="google-play"
-              /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <title>Stays</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/images/site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+
+<body>
+  <!-- header inner -->
+  <div class="header__back">
+    <div class="nav__back" id="nav__back">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <div class="nav__left">
+              <li>
+                <a class="nav__link" href="#"><img class="header__logo" src="./assets/images/icon/stays-logo.svg"
+                    alt="stays-logo" /></a>
+              </li>
             </div>
-          </div>
-          <picture class="header__image">
-            <source
-              srcset="assets/images/header1200+.png"
-              media="(min-width:1200px)"
-            />
-            <source
-              srcset="assets/images/header1200.png"
-              media="(min-width:1200px)"
-            />
-            <source
-              srcset="assets/images/header992.png"
-              media="(min-width:992px)"
-            />
-            <source
-              srcset="assets/images/header768.png"
-              media="(min-width:768)"
-            />
-            <source
-              srcset="assets/images/header576.png"
-              media="(min-width:576)"
-            />
-            <source
-              srcset="assets/images/header320.png"
-              media="(min-width:320)"
-            />
-            <img src="assets/images/header1200+.png" class="img" />
-          </picture>
-        </div>
-        <span class="header__left"></span>
-        <span class="header__right"></span>
-      </header>
+            <div class="nav__center">
+              <li class="nav__item">
+                <a class="nav__link" id="nav__about">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" id="nav__work">Как это работает</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" id="nav__review">Отзывы</a>
+              </li>
+            </div>
+            <div class="nav__right">
+              <button class="nav__btn" id="nav__btn">
+                <span class="btn__content1">Скачать приложение</span>
+                <span class="btn__content2">Скачать</span>
+              </button>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </div>
-
-    <!-- About -->
-    <section class="about" id="about">
+    <!-- header -->
+    <header class="header">
       <div class="container">
-        <div class="about__inner">
-          <div class="about__left">
-            <img
-              class="about__left__img"
-              src="./assets/images/about-telephone.png"
-              alt="about-telephone"
-            />
+        <div class="header-info">
+          <p class="header__text">где угодно // когда угодно</p>
+          <h1 class="header__title">
+            Дачи, отели, квартиры, офисы и туры вашей мечты у вас под рукой
+          </h1>
+          <p class="header__text">
+            Снять или арендовать дачи, отели, квартиры, офисы и туры можно
+            через мобильное приложение Stays
+          </p>
+          <div class="header__apps">
+            <a href="https://apps.apple.com/us/app/stays/id1632427614" target="_blank" class="header__apps__links"><img
+                class="apps__image" src="./assets/images/icon/appstore.svg" alt="appstore" /></a>
+            <a href="https://play.google.com/store/apps/details?id=app.stays" target="_blank"
+              class="header__apps__links"><img class="apps__image" src="./assets/images/icon/google-play.svg"
+                alt="google-play" /></a>
           </div>
-          <div class="about__right">
-            <h3 class="about__title">Расслабьтесь и наслаждайтесь с нами</h3>
-            <p class="about__text">
-              Ищете дачу, гостиницу, квартиру, офис или хотите в тур? У нас есть
-              все! Мы найдем те, которые соответствуют вашим требованиям
-            </p>
-            <div class="about__right__inner">
-              <span class="about__content">
-                <img src="./assets/images/videoplayer1200+.svg" alt="videoplayer">
-              </span>
-              <img
-                class="about__right__img"
-                src="./assets/images/abou-video.png"
-                alt="about-video"
-              />
-            </div>
+        </div>
+        <picture class="header__image">
+          <source srcset="assets/images/header1200+.png" media="(min-width:1200px)" />
+          <source srcset="assets/images/header1200.png" media="(min-width:1200px)" />
+          <source srcset="assets/images/header992.png" media="(min-width:992px)" />
+          <source srcset="assets/images/header768.png" media="(min-width:768)" />
+          <source srcset="assets/images/header576.png" media="(min-width:576)" />
+          <source srcset="assets/images/header320.png" media="(min-width:320)" />
+          <img src="assets/images/header1200+.png" class="img" />
+        </picture>
+      </div>
+      <span class="header__left"></span>
+      <span class="header__right"></span>
+    </header>
+  </div>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__left">
+          <img class="about__left__img" src="./assets/images/about-telephone.png" alt="about-telephone" />
+        </div>
+        <div class="about__right">
+          <h3 class="about__title">Расслабьтесь и наслаждайтесь с нами</h3>
+          <p class="about__text">
+            Ищете дачу, гостиницу, квартиру, офис или хотите в тур? У нас есть
+            все! Мы найдем те, которые соответствуют вашим требованиям
+          </p>
+          <div class="about__right__inner">
+            <span class="about__content">
+              <img src="./assets/images/videoplayer1200+.svg" alt="videoplayer">
+            </span>
+            <img class="about__right__img" src="./assets/images/abou-video.png" alt="about-video" />
           </div>
         </div>
       </div>
-    </section>
-    <!-- Work start -->
-    <section class="work" id="work">
-      <div class="container">
-        <h3 class="work__title">Использование приложения</h3>
-        <div id="main-container" class="main first">
-          <span class="span" id="span"></span>
-          <button id="work__btn" class="work__btn">Для клиента</button>
-          <button id="work__second__btn">Для арендатора</button>
-        </div>
+    </div>
+  </section>
+  <!-- Work start -->
+  <section class="work" id="work">
+    <div class="container">
+      <h3 class="work__title">Использование приложения</h3>
+      <div id="main-container" class="main first">
+        <span class="span" id="span"></span>
+        <button id="work__btn" class="work__btn">Для клиента</button>
+        <button id="work__second__btn">Для арендатора</button>
+      </div>
+      <div class="work__inner">
         <div class="work__images" id="clients__div">
           <div class="work__container">
             <div class="work__container_inner">
-              <!-- <video class="work__image" autoplay loop  playsinline>
-                <source src="assets/images/1.mp4" type="video/mp4">
-                <source src="assets/images/1.mp4" type="video/mp4">
-              </video> -->
-              <img class="work__image" src="assets/images/1.gif" alt="1-gif" >
-              <img
-                class="work__mokup"
-                src="./assets/images/mockup.png"
-                alt="mockup"
-              />
+              <img class="work__image" src="assets/images/1.gif" alt="1-gif">
+              <img class="work__mokup" src="./assets/images/mockup.png" alt="mockup" />
             </div>
             <p class="work__text">Установите приложение и зарегистрируйтесь</p>
           </div>
           <div class="work__container">
             <div class="work__container_inner">
-              <img class="work__image" src="assets/images/2.gif" alt="2-gif" >
-              <img
-                class="work__mokup"
-                src="./assets/images/mockup.png"
-                alt="mockup"
-              />
+              <img class="work__image" src="assets/images/2.gif" alt="2-gif">
+              <img class="work__mokup" src="./assets/images/mockup.png" alt="mockup" />
             </div>
             <p class="work__text">
               Войдите в приложение, выберите нужную услугу и введите свои
@@ -203,12 +137,8 @@
           </div>
           <div class="work__container">
             <div class="work__container_inner">
-              <img class="work__image" src="assets/images/3.gif" alt="3-gif" >
-              <img
-                class="work__mokup"
-                src="./assets/images/mockup.png"
-                alt="mockup"
-              />
+              <img class="work__image" src="assets/images/3.gif" alt="3-gif">
+              <img class="work__mokup" src="./assets/images/mockup.png" alt="mockup" />
             </div>
             <p class="work__text">
               Просмотрите полученные предложения по вашему запросу и выберите
@@ -217,12 +147,8 @@
           </div>
           <div class="work__container">
             <div class="work__container_inner">
-              <img class="work__image" src="assets/images/4.gif" alt="4-gif" >
-              <img
-                class="work__mokup"
-                src="./assets/images/mockup.png"
-                alt="mockup"
-              />
+              <img class="work__image" src="assets/images/4.gif" alt="4-gif">
+              <img class="work__mokup" src="./assets/images/mockup.png" alt="mockup" />
             </div>
             <p class="work__text">
               И свяжитесь с владельцем предложения, согласитесь и получайте
@@ -230,30 +156,20 @@
             </p>
           </div>
         </div>
-        <div
-          class="work__images client__gif"
-          id="owners__div"
-          style="display: none"
-        >
+      </div>
+      <div class="work__inner">
+        <div class="work__images client__gif" id="owners__div" style="display: none">
           <div class="work__container">
             <div class="work__container_inner">
-              <img class="work__image" src="assets/images/5.gif" alt="5-gif" >
-              <img
-                class="work__mokup"
-                src="./assets/images/mockup.png"
-                alt="mockup"
-              />
+              <img class="work__image" src="assets/images/5.gif" alt="5-gif">
+              <img class="work__mokup" src="./assets/images/mockup.png" alt="mockup" />
             </div>
             <p class="work__text">Установите приложение и зарегистрируйтесь</p>
           </div>
           <div class="work__container">
             <div class="work__container_inner">
-              <img class="work__image" src="assets/images/6.gif" alt="6-gif" >
-              <img
-                class="work__mokup"
-                src="./assets/images/mockup.png"
-                alt="mockup"
-              />
+              <img class="work__image" src="assets/images/6.gif" alt="6-gif">
+              <img class="work__mokup" src="./assets/images/mockup.png" alt="mockup" />
             </div>
             <p class="work__text">
               Войдите в приложение и добавьте свои услуги
@@ -261,12 +177,8 @@
           </div>
           <div class="work__container">
             <div class="work__container_inner">
-              <img class="work__image" src="assets/images/7.gif" alt="7-gif" >
-              <img
-                class="work__mokup"
-                src="./assets/images/mockup.png"
-                alt="mockup"
-              />
+              <img class="work__image" src="assets/images/7.gif" alt="7-gif">
+              <img class="work__mokup" src="./assets/images/mockup.png" alt="mockup" />
             </div>
             <p class="work__text">
               Предлагайте свои услуги выгодным запросам и зарабатывайте
@@ -274,147 +186,133 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="review" id="review">
-      <div class="container">
-        <h3 class="review__title">Отзывы</h3>
+  <section class="review" id="review">
+    <div class="container">
+      <h3 class="review__title">Отзывы</h3>
 
-        <div class="wrapper">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <p class="review__text">
-                  1111Хороший сервис, ни разу не подводил, адекватные цены,
-                  точная информация. Из минусов - не совсем удобный поиск,
-                  неверно указана стоимость посуточной аренды, так как в нее не
-                  включены доп. расходы, от чего неверно складывается
-                  впечатление об итоговой стоимости.
-                </p>
-                <div class="swipper__inner">
-                  <h4 class="review__heading">Кирилл Волчков</h4>
-                  <img
-                    class="swiper__img"
-                    src="./assets/images/stars.svg"
-                    alt="stars"
-                  />
-                </div>
+      <div class="wrapper">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="review__text">
+                1111Хороший сервис, ни разу не подводил, адекватные цены,
+                точная информация. Из минусов - не совсем удобный поиск,
+                неверно указана стоимость посуточной аренды, так как в нее не
+                включены доп. расходы, от чего неверно складывается
+                впечатление об итоговой стоимости.
+              </p>
+              <div class="swipper__inner">
+                <h4 class="review__heading">Кирилл Волчков</h4>
+                <img class="swiper__img" src="./assets/images/stars.svg" alt="stars" />
               </div>
+            </div>
 
-              <div class="swiper-slide swiper1">
-                <p class="review__text">
-                  1111Хороший сервис, ни разу не подводил, адекватные цены,
-                  точная информация. Из минусов - не совсем удобный поиск,
-                  неверно указана стоимость посуточной аренды, так как в нее не
-                  включены доп. расходы, от чего неверно складывается
-                  впечатление об итоговой стоимости.
-                </p>
+            <div class="swiper-slide swiper1">
+              <p class="review__text">
+                1111Хороший сервис, ни разу не подводил, адекватные цены,
+                точная информация. Из минусов - не совсем удобный поиск,
+                неверно указана стоимость посуточной аренды, так как в нее не
+                включены доп. расходы, от чего неверно складывается
+                впечатление об итоговой стоимости.
+              </p>
 
-                <div class="swipper__inner">
-                  <h4 class="review__heading">Кирилл Волчков</h4>
-                  <img
-                    class="swiper__img"
-                    src="./assets/images/stars.svg"
-                    alt="stars"
-                  />
-                </div>
+              <div class="swipper__inner">
+                <h4 class="review__heading">Кирилл Волчков</h4>
+                <img class="swiper__img" src="./assets/images/stars.svg" alt="stars" />
               </div>
+            </div>
 
-              <div class="swiper-slide swiper2">
-                <p class="review__text">
-                  1111Хороший сервис, ни разу не подводил, адекватные цены,
-                  точная информация. Из минусов - не совсем удобный поиск,
-                  неверно указана стоимость посуточной аренды, так как в нее не
-                  включены доп. расходы, от чего неверно складывается
-                  впечатление об итоговой стоимости.
-                </p>
-                <div class="swipper__inner">
-                  <h4 class="review__heading">Кирилл Волчков</h4>
-                  <img
-                    class="swiper__img"
-                    src="./assets/images/stars.svg"
-                    alt="stars"
-                  />
-                </div>
+            <div class="swiper-slide swiper2">
+              <p class="review__text">
+                1111Хороший сервис, ни разу не подводил, адекватные цены,
+                точная информация. Из минусов - не совсем удобный поиск,
+                неверно указана стоимость посуточной аренды, так как в нее не
+                включены доп. расходы, от чего неверно складывается
+                впечатление об итоговой стоимости.
+              </p>
+              <div class="swipper__inner">
+                <h4 class="review__heading">Кирилл Волчков</h4>
+                <img class="swiper__img" src="./assets/images/stars.svg" alt="stars" />
               </div>
             </div>
           </div>
-          <div class="review__buttons">
-            <div class="next-button">
-              <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="next-button--inner" d="M18.75 8.5L10 1L1.25 8.5" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="prev-button">
-              <svg  width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="prev-button--inner" d="M18.75 1.5L10 9L1.25 1.5" stroke="#2D2D2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
+        </div>
+        <div class="review__buttons">
+          <div class="next-button">
+            <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="next-button--inner" d="M18.75 8.5L10 1L1.25 8.5" stroke="#2D2D2D" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="prev-button">
+            <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="prev-button--inner" d="M18.75 1.5L10 9L1.25 1.5" stroke="#2D2D2D" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer start -->
-    <footer class="footer">
-      <div class="container">
-        <h3 class="footer__title">
-          Дачи, отели, квартиры, офисы и туры в одном приложении
-        </h3>
-        <p class="footer__text">Скачайте приложение и получайте удовольствие</p>
-        <div class="footer__links">
-          <div class="footer__link">
-            <a
-              href="https://apps.apple.com/us/app/stays/id1632427614"
-              target="_blank"
-            >
-              <img src="./assets/images/footerapp.png" alt="footerapp" />
-            </a>
-          </div>
-          <div class="footer__link">
-            <a
-              href="https://play.google.com/store/apps/details?id=app.stays"
-              target="_blank"
-            >
-              <img src="./assets/images/footerplay.svg" alt="footerplay" />
-            </a>
-          </div>
+  <!-- Footer start -->
+  <footer class="footer">
+    <div class="container">
+      <h3 class="footer__title">
+        Дачи, отели, квартиры, офисы и туры в одном приложении
+      </h3>
+      <p class="footer__text">Скачайте приложение и получайте удовольствие</p>
+      <div class="footer__links">
+        <div class="footer__link">
+          <a href="https://apps.apple.com/us/app/stays/id1632427614" target="_blank">
+            <img src="./assets/images/footerapp.png" alt="footerapp" />
+          </a>
         </div>
-        <div class="footer__info">
-          <p class="footer__texts">© 2022 Stays. Все права защищены</p>
-          <div class="footer__info__inner">
-            <p class="footer__texts">Пользовательские соглашения</p>
-            <p class="footer__texts">Политика конфиденциальности</p>
-          </div>
+        <div class="footer__link">
+          <a href="https://play.google.com/store/apps/details?id=app.stays" target="_blank">
+            <img src="./assets/images/footerplay.svg" alt="footerplay" />
+          </a>
         </div>
       </div>
-    </footer>
-    <!-- Footer end -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <div class="footer__info">
+        <p class="footer__texts">© 2022 Stays. Все права защищены</p>
+        <div class="footer__info__inner">
+          <p class="footer__texts">Пользовательские соглашения</p>
+          <p class="footer__texts">Политика конфиденциальности</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
-        effect: "cards",
-        initialSlide: 3,
-        cardsEffect: {
-          perSlideOffset: 15,
-          rotate: false,
-          perSlideRotate: 0,
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      effect: "cards",
+      initialSlide: 3,
+      cardsEffect: {
+        perSlideOffset: 15,
+        rotate: false,
+        perSlideRotate: 0,
+      },
+      on: {
+        progress: (swiper, translate) => {
+          swiper.slides.forEach((slide) => {
+            slide.style.transform = `translate3d(${slide.progress}px,0,0)`;
+          });
         },
-        on: {
-          progress: (swiper, translate) => {
-            swiper.slides.forEach((slide) => {
-              slide.style.transform = `translate3d(${slide.progress}px,0,0)`;
-            });
-          },
-        },
-        grabCursor: true,
-        navigation: {
-          nextEl: ".next-button",
-          prevEl: ".prev-button",
-        },
-      });
-    </script>
-  </body>
+      },
+      grabCursor: true,
+      navigation: {
+        nextEl: ".next-button",
+        prevEl: ".prev-button",
+      },
+    });
+  </script>
+</body>
+
 </html>
