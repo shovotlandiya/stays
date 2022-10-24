@@ -1,0 +1,130 @@
+.wrapper {
+  padding-bottom: 180px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 800px;
+}
+.swiper {
+  width: 1320px;
+  height: 460px;
+}
+
+.swiper-slide-next {
+  background: #9fdee5;
+}
+.swiper-slide {
+  padding: 110px 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  background: #77d0da;
+}
+.swiper-slide-next {
+  background: #77d0da;
+}
+.swiper-slide-prev {
+  background: #9fdee5;
+}
+.swiper-slide-visible {
+  background: #e8f7f9;
+}
+
+.next-button {
+    cursor: pointer;
+  -webkit-user-select: none;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: #f0f4f4;
+  padding: 27px;
+}
+.prev-button {
+    cursor: pointer;
+  -webkit-user-select: none;
+  border-radius: 50%;
+  background: #f0f4f4;
+  padding: 27px;
+}
+
+.swipper__inner {
+  margin-top: 70px;
+  margin-bottom: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.swiper__img{
+  max-width: 90px;
+  width: 100%;
+}
+@media(max-width:1200px){
+    .review__text{
+        font-size: 18px;
+    }
+    .swiper-slide{
+        padding: 84px 80px;
+    }
+}
+@media(max-width:768px){
+    .review__text{
+        font-size: 16px;
+    }
+    .swiper-slide{
+        padding: 72px 36px;
+    }
+}
+
+@media(max-width:576px){
+  .wrapper{
+    // height: 700px;
+    padding-bottom: 100px;
+  }
+    .review__text{
+        font-size: 14px;
+    }
+    .swiper-slide{
+        padding: 72px 24px;
+    }
+}
+
+@media(max-width:320px){
+    .review__text{
+        font-size: 12px;
+    }
+    .swiper-slide{
+        padding: 0 30px;
+    }
+}
+// .next-button:disabled,
+// .next-button[disabled]{
+//   border: 1px solid #999999;
+//   background-color: red;
+//   color: #666666;
+// }
+
+.swiper-button-disabled .next-button--inner {
+ stroke: #B3B3B3;
+}
+
+.swiper-button-disabled  .prev-button--inner {
+  stroke: #B3B3B3;
+ }
+// .next-button:hover {
+//   background: #E8F7F9;
+// }
+// .next-button:hover .next-button--inner{
+//   stroke: #15AEBF;
+// }
+// .prev-button:hover {
+//   background: #E8F7F9;
+// }
+// .prev-button:hover .prev-button--inner{
+//   stroke: #15AEBF;
+// }
